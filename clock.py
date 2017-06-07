@@ -27,18 +27,12 @@ FONT = (
 ("99","99","99","09","99")
 )
 
-radio.on()
-hours = 0
-mins = 0
-secs = 0
-next_tick = running_time() + TICK_RATE
-
 def img(n):
     lg = FONT[int(n/10)]
     rg = FONT[int(n%10)]
     c = ""
     for r in range(5):
-        c += lg[r][0] + lg[r][1] + "0" + rg[r][0] + rg[r][1]
+        c += lg[r] + "0" + rg[r]
         if r != 4:
             c += ':'
     return Image(c)
