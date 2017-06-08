@@ -14,7 +14,7 @@ def read_config():
     else:
         config = SECS
 
-FONT = (
+FONT = ( # WhaleySans font, 2x5 digits only
 ("99","99","99","99","99"),
 ("09","09","09","09","09"),
 ("99","09","99","90","99"),
