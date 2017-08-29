@@ -5,6 +5,10 @@ radio.config(group=7)
 TICK_RATE = 1000
 HOURS, MINS, SECS = 'h','m','s'
 
+next_tick = 0
+hours, mins, secs = 0, 0, 0
+config = None
+
 def read_config():
     global config
     if pin0.read_digital() == 1:
